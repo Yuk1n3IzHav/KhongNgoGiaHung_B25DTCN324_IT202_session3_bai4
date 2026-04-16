@@ -27,12 +27,12 @@ VALUES
 SELECT * FROM ORDERS WHERE Status = 'Completed';
 
 CREATE TABLE ORDERS_ARCHIVE (
-    OrderID INT,
-    CustomerName VARCHAR(100),
-    OrderDate DATETIME,
-    TotalAmount DECIMAL(18,2),
-    Status VARCHAR(20),
-    IsDeleted BIT
+    OrderIDNew INT,
+    CustomerNameNew VARCHAR(100),
+    OrderDateNew DATETIME,
+    TotalAmountNew DECIMAL(18,2),
+    StatusNew VARCHAR(20),
+    IsDeletedNew BIT
 );
 
 INSERT INTO ORDERS_ARCHIVE
